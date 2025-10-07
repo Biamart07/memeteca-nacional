@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memeteca Nacional</title>
+    <link href="./dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        /* Adicionamos a fonte no 'theme' do Tailwind ou aqui diretamente */
+        body { font-family: 'Press Start 2P', cursive; }
+    </style>
+</head>
+<body class="bg-[#2c3e50] text-[#ecf0f1] flex flex-col items-center justify-center min-h-screen p-4">
+
+    <header class="text-center">
+        <h1 class="text-4xl md:text-5xl font-bold text-[#f1c40f] [text-shadow:_4px_4px_0_rgb(0_0_0)] mb-5">Memeteca Nacional</h1>
+        <p class="text-[#bdc3c7] text-sm mb-8">Aperte uma tecla ou clique para tocar</p>
+    </header>
+
+    <main>
+        <div class="keys-container grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 w-full max-w-4xl">
+            
+            <div class="key border-4 border-[#7f8c8d] rounded-lg p-4 bg-[#95a5a6] text-black cursor-pointer transition-all duration-75 flex flex-col items-center justify-center aspect-square" data-key="q">
+                <kbd class="text-2xl md:text-4xl font-black">Q</kbd>
+                <span class="sound-name text-xs uppercase mt-2 font-semibold text-[#2c3e50] text-center">JEREMIAS MUITO LOUCO</span>
+            </div>
+
+            <div class="key border-4 border-[#7f8c8d] rounded-lg p-4 bg-[#95a5a6] text-black cursor-pointer transition-all duration-75 flex flex-col items-center justify-center aspect-square" data-key="w">
+                <kbd class="text-2xl md:text-4xl font-black">W</kbd>
+                <span class="sound-name text-xs uppercase mt-2 font-semibold text-[#2c3e50] text-center">IRMÃ DORA</span>
+            </div>
+
+            <div class="key border-4 border-[#7f8c8d] rounded-lg p-4 bg-[#95a5a6] text-black cursor-pointer transition-all duration-75 flex flex-col items-center justify-center aspect-square" data-key="e">
+                <kbd class="text-2xl md:text-4xl font-black">E</kbd>
+                <span class="sound-name text-xs uppercase mt-2 font-semibold text-[#2c3e50] text-center">DEUZULIVRE</span>
+            </div>
+
+             </div>
+    </main>
+
+    <footer class="mt-12 text-xs text-[#7f8c8d]">
+        <p>Feito por [Seu Nome]</p>
+    </footer>
+
+    <audio data-key="q" src="./sounds/aiquedelicia.mp3"></audio>
+    <audio data-key="w" src="./sounds/paidefamilia.mp3"></audio>
+    <audio data-key="e" src="./sounds/irra.mp3"></audio>
+
+    <script src="./src/script.js"></script>
+</body>
+</html>
