@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
-@tailwind base;
-@tailwind components;
 @tailwind utilities;
+
+@theme {
+    --color-fundo: #1A103C;
+    --color-magenta: #FF00FF;
+    --color-ciano: #00FFFF;
+    --color-texto-principal: #E0E0E0;
+    --color-text-secundario: #6B7280;
+    --color-roxo-botao: #2D214F;
+}
