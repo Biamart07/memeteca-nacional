@@ -32,3 +32,12 @@ body {
 .playing .sound-name {
     @apply text-[#E0E0E0]; /* Texto do meme fica branco/claro */
 } 
+
+
+.tecla:focus-visible {
+  /* Remove o contorno padrão do navegador */
+  @apply outline-none;
+
+  /* Adiciona um 'anel' customizado que combina com nosso design neon */
+  @apply ring-2 ring-offset-2 ring-offset-[#1A103C] ring-[#FF00FF];
+}
