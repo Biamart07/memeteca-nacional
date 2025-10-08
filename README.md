@@ -1,6 +1,6 @@
 # 🎵 Memeteca BR
 
-![Memeteca BR](assets/image/memeteca-br)
+![Memeteca BR](assets/image/memeteca-br.png)
 
 **O Soundboard Definitivo de Memes Brasileiros!** 🎉
 
