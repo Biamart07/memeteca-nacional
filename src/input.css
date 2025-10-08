@@ -10,3 +10,25 @@
     --color-text-secundario: #6B7280;
     --color-roxo-botao: #2D214F;
 }
+
+body {
+    background-image: url('../assets/image/imagem-fundo.png'); 
+    background-size: cover; /* Cobre todo o background */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição */
+    background-attachment: fixed; /* Fixa a imagem no fundo ao rolar */
+  
+    /* Garante que a cor de fundo sólida do body ainda esteja lá caso a imagem não carregue ou em alguns casos */
+    background-color: #1A103C; 
+  }
+
+.playing {
+    /* Altera a cor de fundo do botão para o rosa neon e adiciona um brilho */
+    @apply translate-y-0 border-b-2 border-[#FF00FF] bg-[#FF00FF] shadow-[0_0_20px_#FF00FF];
+  }
+
+
+ /* Opcional: ajustar a cor do texto do meme quando o botão está 'playing' */
+.playing .sound-name {
+    @apply text-[#E0E0E0]; /* Texto do meme fica branco/claro */
+} 
