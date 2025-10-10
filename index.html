@@ -23,8 +23,8 @@
         <p class="text-ciano text-sm mt-2 text-shadow-2xs text-shadow-black">Clique para tocar</p>
     </header>
 
-    <main class="w-full max-w-xl">
-        <div class="keys-container grid grid-cols-3 gap-4">
+    <main class="w-full max-w-xl lg:max-w-2xl">
+        <div class="keys-container grid grid-cols-3 lg:grid-cols-4 gap-4">
             
             <div class="tecla tecla_jeremias bg-roxo-botao rounded-lg border-b-4 border-fundo p-3 sm:p-4 flex flex-col items-center justify-center aspect-square cursor-pointer transition-all duration-100 hover:-translate-y-1" role="button" aria-label="Tocar som do meme Jeremias Muito Louco">
                 <span class="sound-name text-[10px] sm:text-xs uppercase font-semibold text-ciano text-shadow-2xs text-shadow-black hover:text-magenta text-center leading-5">JEREMIAS MUITO LOUCO</span>
@@ -61,6 +61,18 @@
             <div class="tecla tecla_onde bg-roxo-botao rounded-lg border-b-4 border-fundo p-3 sm:p-4 flex flex-col items-center justify-center aspect-square cursor-pointer transition-all duration-100 hover:-translate-y-1" role="button" aria-label="Tocar som do meme onde é que eu to?">
                 <span class="sound-name text-[10px] sm:text-xs uppercase font-semibold text-ciano text-shadow-2xs text-shadow-white hover:text-magenta text-center leading-5">ONDE É QUE EU TO?</span>
             </div>
+
+            <div class="tecla tecla_dilma bg-roxo-botao rounded-lg border-b-4 border-fundo p-3 sm:p-4 flex flex-col items-center justify-center aspect-square cursor-pointer transition-all duration-100 hover:-translate-y-1" role="button" aria-label="Tocar som do meme todo mundo vai perder">
+                <span class="sound-name text-[10px] sm:text-xs uppercase font-semibold text-ciano text-shadow-2xs text-shadow-white hover:text-magenta text-center leading-5">TODO MUNDO VAI PERDER</span>
+            </div>
+
+            <div class="tecla tecla_alegria bg-roxo-botao rounded-lg border-b-4 border-fundo p-3 sm:p-4 flex flex-col items-center justify-center aspect-square cursor-pointer transition-all duration-100 hover:-translate-y-1" role="button" aria-label="Tocar som do meme para nossa alegria">
+                <span class="sound-name text-[10px] sm:text-xs uppercase font-semibold text-ciano text-shadow-2xs text-shadow-white hover:text-magenta text-center leading-5">PARA NOSSA ALEGRIA</span>
+            </div>
+
+            <div class="tecla tecla_embora bg-roxo-botao rounded-lg border-b-4 border-fundo p-3 sm:p-4 flex flex-col items-center justify-center aspect-square cursor-pointer transition-all duration-100 hover:-translate-y-1" role="button" aria-label="Tocar som do meme vai te embora">
+                <span class="sound-name text-[10px] sm:text-xs uppercase font-semibold text-ciano text-shadow-2xs text-shadow-white hover:text-magenta text-center leading-5">VAI TE EMBORA</span>
+            </div>
         </div>
     </main>
 
@@ -77,6 +89,9 @@
     <audio id="som_tecla_piorou" src="./assets/audio/parece-que-piorou.MP3"></audio>
     <audio id="som_tecla_sabia" src="./assets/audio/que-merda-hein.mp3"></audio>
     <audio id="som_tecla_onde" src="./assets/audio/onde-e-que-to.mp3"></audio>
+    <audio id="som_tecla_dilma" src="./assets/audio/dilma.mp3"></audio>
+    <audio id="som_tecla_alegria" src="./assets/audio/para-nossa-alegria.mp3"></audio>
+    <audio id="som_tecla_embora" src="./assets/audio/vai-te-embora.mp3"></audio>
 
     <script src="./src/script.js"></script>
 </body>
